@@ -1,7 +1,7 @@
 <!-- default file list -->
 *Files to look at*:
 
-* [Form1.cs](./CS/WindowsApplication53/Form1.cs) (VB: [Form1.vb](./VB/WindowsApplication53/Form1.vb))
+* [Form1.cs](./CS/PivotGridCustomSummaryExample/Form1.cs) (VB: [Form1.vb](./VB/PivotGridCustomSummaryExample/Form1.vb))
 <!-- default file list end -->
 #  How to Calculate and Display Custom Summaries
 
