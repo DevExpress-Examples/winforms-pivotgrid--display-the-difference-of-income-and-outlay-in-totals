@@ -3,11 +3,19 @@
 
 * [Form1.cs](./CS/WindowsApplication53/Form1.cs) (VB: [Form1.vb](./VB/WindowsApplication53/Form1.vb))
 <!-- default file list end -->
-#  How to display the difference of Income and Outlay in totals
+#  How to Calculate and Display Custom Summaries
 
 
-<p>The following example demonstrates how to calculate and display the difference of Income and Outlay in totals. <br>In this example, a custom Grand Total is implemented for the <strong>Value</strong> data field.<br>To show additional <a href="https://documentation.devexpress.com/#WindowsForms/CustomDocument1900">Grand Total</a> rows or columns, add a field to the <a href="http://documentation.devexpress.com/#WindowsForms/CustomDocument1711">Data Area</a>. Then, set the field's <a href="https://documentation.devexpress.com/#CoreLibraries/DevExpressXtraPivotGridPivotGridFieldBase_SummaryTypetopic">PivotGridFieldBase.SummaryType</a> property to <strong>Custom</strong>. To provide values for this field, use the<a href="http://documentation.devexpress.com/#WindowsForms/DevExpressXtraPivotGridPivotGridControl_CustomSummarytopic">PivotGridControl.CustomSummary</a> event. You can use <br>the <a href="http://documentation.devexpress.com/#WindowsForms/DevExpressXtraPivotGridDataPivotGridCustomSummaryEventArgsBase_CreateDrillDownDataSourcetopic">PivotGridCustomSummaryEventArgsBase.CreateDrillDownDataSource</a> method to get a list of all corresponding underlying data source rows, and then you will be able to calculate summary values. <br>To learn more about custom summaries, see the <a href="https://documentation.devexpress.com/#WindowsForms/CustomDocument9391">Custom summaries</a> topic.</p>
+This example calculates and displays the difference of Income and Outlay in totals.
 
-<br/>
+It demostrates the following approaches:
+
+* **Legacy** approach that is based on a [CustomSummary](https://docs.devexpress.com/WindowsForms/DevExpress.XtraPivotGrid.PivotGridControl.CustomSummary) event. This approach does not work in [Optimized mode](https://docs.devexpress.com/CoreLibraries/401367).
+* **Unbound field**. This approach uses a summary expression in an additional unbound field.
+* **Data Binding API**. This approach works only in [Optimized mode](https://docs.devexpress.com/CoreLibraries/401367). An additional field uses the [ExpressionDataBinding](https://docs.devexpress.com/WindowsForms/DevExpress.XtraPivotGrid.ExpressionDataBinding) instance to specify an expression to calculate.
 
 
+![](/images/screenshot.png)
+
+See also:
+* [Custom Summaries](https://docs.devexpress.com/WindowsForms/9391)
