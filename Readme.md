@@ -3,15 +3,12 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T413352)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
 
-* [Form1.cs](./CS/PivotGridCustomSummaryExample/Form1.cs) (VB: [Form1.vb](./VB/PivotGridCustomSummaryExample/Form1.vb))
-<!-- default file list end -->
-#  How to Calculate and Display Custom Summaries
-
+#  Pivot Grid for WinForms - Calculate and Display Custom Summaries
 
 This example calculates and displays the difference of Income and Outlay in totals.
+
+![](/images/screenshot.png)
 
 It demostrates the following approaches:
 
@@ -19,8 +16,14 @@ It demostrates the following approaches:
 * **Unbound field**. This approach uses a summary expression in an additional unbound field.
 * **Data Binding API**. This approach works only in [Optimized mode](https://docs.devexpress.com/CoreLibraries/401367). An additional field uses the [ExpressionDataBinding](https://docs.devexpress.com/WindowsForms/DevExpress.XtraPivotGrid.ExpressionDataBinding) instance to specify an expression to calculate.
 
+## Files to Review
 
-![](/images/screenshot.png)
+* [Form1.cs](./CS/PivotGridCustomSummaryExample/Form1.cs) (VB: [Form1.vb](./VB/PivotGridCustomSummaryExample/Form1.vb))
 
-See also:
-* [Custom Summaries](https://docs.devexpress.com/WindowsForms/9391)
+## Documentation
+
+[Custom Summaries](https://docs.devexpress.com/WindowsForms/9391)
+
+## More Examples 
+
+[Pivot Grid for WinForms - How to Aggregate Data by the Field's First Value](https://github.com/DevExpress-Examples/winforms-pivot-grid-custom-aggregates)
